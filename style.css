@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Arizonia&family=Bangers&family=Berkshire+Swash&family=Concert+One&family=Dancing+Script:wght@700&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Imperial+Script&family=Mea+Culpa&family=Oleo+Script+Swash+Caps:wght@400;700&family=Orelega+One&family=Oswald:wght@500;700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Roboto:ital,wght@0,400;0,700;0,900;1,100;1,300&family=Smokum&family=Special+Elite&family=Stint+Ultra+Condensed&family=Water+Brush&family=Yeseva+One&family=Zen+Loop:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(8, 144, 238);
+  background: linear-gradient(
+    8deg,
+    rgba(8, 144, 238, 1) 0%,
+    rgba(245, 238, 238, 1) 100%
+  );
+
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+nav ul li:not(:last-child) {
+  display: inline-block;
+  background-color: white;
+  margin: 1.5rem;
+  padding: 2rem;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 25px 5px rgb(8, 144, 238, 1),
+    inset 5px 5px 25px 5px rgb(8, 144, 238, 1);
+}
+
+nav ul li:hover:not(:last-child) {
+  transform: scale(1.2);
+}
+nav ul li:last-child * {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 5rem;
+  top: 3rem;
+  right: 2rem;
+}
+nav ul li:last-child :not(i) {
+  border: 2px solid rgb(8, 144, 238, 1);
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 2rem;
+  color: blue;
+}
+h1 {
+  margin-left: 10%;
+  font-family: "Water Brush", cursive;
+  font-size: 9rem;
+  color: white;
+  text-shadow: 10px 10px 15px rgb(18, 18, 194);
+}
+.image {
+  position: relative;
+
+  margin-left: 13%;
+  top: 10px;
+  border-radius: 2rem;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+
+  box-shadow: 5px 5px 40px 10px white;
+}
+.image img {
+  width: 100%;
+}
+.container h2 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  color: blue;
+}
+
+.container {
+  float: right;
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+  border: 6px solid rgb(8, 144, 238, 1);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+button {
+  padding: 1.5rem;
+  background: transparent;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 15px white;
+  margin: 1rem;
+  font-size: 1rem;
+}
+button:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+label {
+  display: block;
+  margin: 1rem;
+  width: 50px;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: blue;
+}
+.container input {
+  padding: 0.7rem;
+  border: 2px solid rgb(8, 144, 238, 1);
+  box-shadow: 5px 5px 25px white;
+}
+.container textarea {
+  border: 2px solid rgb(8, 144, 238, 1);
+  box-shadow: 5px 5px 25px white;
+}
+
+textarea:placeholder-shown {
+  padding: 1rem;
+}
